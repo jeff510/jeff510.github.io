@@ -1,0 +1,47 @@
+  body {
+  
+    background: linear-gradient(#FFB471 , #12406A);
+  
+  
+    width: 720px;
+    justify-content:center;
+    text-align: center;
+    padding:30px; 
+      margin: auto;
+      border: 1px solid red;
+        background:#4A746A;
+  }
+  
+  
+  #page {
+      background: linear-gradient(#FFB471 , #12406A);
+    text-align: center;
+    width: 600px;
+    justify-content:center;
+    text-align: center;
+    padding:30px; 
+      margin: auto
+  }
+  
+  
+  .Content{
+    border: 1px solid black;
+    margin: 0 auto;
+  padding:30px;
+    width: px;
+    text-align: center;
+    backgorund-color:black;
+  }
+  
+nav{
+  
+  
+  
+  
+  
+}
+img{
+  width: 500px;
+  height:200px;
+  
+}
