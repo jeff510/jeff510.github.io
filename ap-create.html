@@ -1,38 +1,127 @@
-<html>
-    <head>
-        <title>Page Title</title>
-         <link href="stylesheet.css" rel="stylesheet" />
-    </head>
-    <body>
-         <div class="page">
-
-      <div class="content">
-
-        <h1>jeffrey capstone website </h1>
-
-      </div>
-  <table class="nav">
-
-          <tr>
-
-            <td><a href="index.html">Home</a></td>
-
-            <td><a href="ap-create.html">Ap-Create</a></td>
-
-            <td><a href="ap-explore.html">Ap-Explore</a></td>
-
-            <td><a href="college.html">college</a></td>
+    <html>
+        <head>
+            <title>Page Title</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+        </head>
+        <body>
+             <div class="page">
+    
+          <div class="content">
+    
+            <h1>jeffrey capstone website </h1>
+    
+          </div>
+      <table class="nav">
+    
+              <tr>
+    
+                <td><a href="index.html">Home</a></td>
+    
+                <td><a href="ap-create.html">Ap-Create</a></td>
+    
+                <td><a href="ap-explore.html">Ap-Explore</a></td>
+    
+                <td><a href="college.html">college</a></td>
+                
+                 <td><a href="Strength.html">Strengths</a></td>
+                 
+                 <td><a href="Research.html">research</a></td>
+    
+              </tr>
+    
+            </table>
             
-             <td><a href="Strength.html">Strengths</a></td>
+        </div>
+    
+            
+           
+        </body>
+        <body>
+            <p>
+                <h3>2A)</h3>My program is written in javascript and my developmental environment space was popcode.The purpose of my program is to use the paddle and make the ball bounce of the padals to each side In this video clip, you can see the ball is moving across until the padel hit. the ball which makes it bounce to the other side .
 
-          </tr>
+            </p>
+            <p>
+                <h3>2B)</h3>The first developmental challenge I encountered were the boundaries and the pedals I solved this challenge by collaborating with my partner, we figure out the y and x  how much we need to make the bounce by gravity .The second developmental challenge I encountered was the ball leaving the boundaries and going forever.I solved this challenge by using the paddle function and using the x axis.By myself, I was able to figure out how the ball movement was important to the game. My partner and I overcame a challenge by working to together and facing the challenge one step at a time
+            </p>
+            <p><b>2C)</b>
+                <pre><code>if (x + 20 > 570 && y > y2 && y < y2 + 120) {
+    dx = -dx;
+ if (s === 1.1) {
+  s = 0.9;
+   } else {
+    s = 1.1;
 
-        </table>
-    </div>
 
-         <iframe src="ap-create/index.html" width=600 height="400" />
-    </body>
-</html>
+</code></pre>The purpose of this block of code is making the paddle move up and down using the variable dy and dx this variable make the paddle move in place . When this runs correctly, the right paddle would move up and down using the the up and down arrow keys to move and hit the ball  to the other side to the other paddle.The algorithm is able to achieve this result by moving to 120 and 570 in the y axis this means that the paddle moves up and down the algorithm is a mathematical it use the y-axis . The higher the numberit means that the paddle is doing down and it the same but it's the opposite If this program did not include this algorithm.
 
 
+                <pre><code>if(x < 20 && y > y1 && y < y1 + 120)
+    {
+        dx=-dx;
+        
+        if (s === 1.1) {
+          s = 0.9;
+        } else {
+          s = 1.1;
+        }
+; 
+  
+ ;</code></pre>This is the first subalgorthium is the board of the ball so when the hit the paddle the ball will bounce and it will not go through paddle and off the screen. This if statement make it if the ball touches the paddle the ball will bounce of the paddle to the other side in the other direction   
+                <pre><code> x=x+15*dx*s;
+  y=y+15*dy*(1-s);
+  
+    if (y > 300 || y<10) {
+    dy=-dy;
+    
+  }
+
+
+
+}</code></pre>This is the second sub Algorithm is a mathematical. this is the code that makes that ball move to the side of paddle . This works by when that hit the paddle the ball will move to the other side.
+
+
+            </p>
+            <p><b>2D)</b>
+                <pre><code>function controls() {
+    if (keyIsDown(65)) {
+        if (y1 < 260) {
+            y1 = y1 + 20;
+        }
+    }
+
+    if (keyIsDown(81)) {
+        if (y1 > 0) {
+            y1 = y1 - 15;
+        }
+    }
+
+    if (keyIsDown(DOWN_ARROW)) {
+        if (y2 < 260) {
+            y2 = y2 + 15;
+        }
+
+    }
+
+    if (keyIsDown(UP_ARROW)) {
+        if (y2 > 0) {
+            y2 = y2 - 20;
+        }
+    }
+}
+
+
+}</code></pre>An example of an abstraction in my program is Function control();
+I create this function control()s to avoid the mixing my ball and control if statement this  made it  easy to identify which part of the was the control and ball movement. If this abstraction werent present, then my code will be mixed and it will be hard to identify the controls because of all my if statements.
+            </p>
+
+        </body>
+        <body>
+            <iframe src="create/index.html" width="610" height="500"/>
+        </body>
+        
+        
+    </html>
+    
  
+     

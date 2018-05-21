@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-    </head>
-    <body>
-        <iframe src="create/index.html" width=600 height="400" />
-        <script type="text/javascript">
-            var y1=0;
+
+<head>
+
+</head>
+
+<body>
+
+    <style type="text/css">
+  
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script type="text/javascript">
+    var y1=0;
 var y2=200;
 var x=100;
 var y=200;
@@ -47,7 +54,7 @@ function draw() {
 controls();
   boundaries();
     
-    if(x < 20 && y > y1 && y < y1 + 120)
+    if(x < 20 && y > y1 && y < y1 + -120)
     {
         dx=-dx;
         
@@ -120,7 +127,7 @@ function controls(){
 
 
     // TODO: check the left boundary
-     if(x <= 45)
+     if(x <=10)
     {
       dx = dx*-1; 
     }
@@ -133,7 +140,7 @@ function controls(){
         dx = dx*-1;
     }
     
-    if(x < 20 && y > y1 && y < y1 + 120)
+    if(x < 20 && y > y1 && y < y1 + -120)
     {
         dx=-dx;
         
@@ -144,6 +151,7 @@ function controls(){
         }
     }
         }
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
